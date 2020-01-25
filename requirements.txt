@@ -1,0 +1,3 @@
+#####Requirememts without Version Specifiers #####
+pytest
+flake8
