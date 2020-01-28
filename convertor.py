@@ -9,13 +9,13 @@ def convert(a):
   MM = ['','M','MM','MMM']
   if type(a) is int:
     if a <= 0:
-      raise Exception("Please enter a number greater than 0")
+      return "Please enter a number greater than 0"
     elif a >= 4000:
-      raise Exception("Out of range")
+      return "Out of range"
     else:
       return MM[a//1000] + CC[(a%1000)//100] + XX[(a%100)//10] + II[a%10]
   else:
-    raise Exception("Please enter a integer")
+    return "Please enter a integer"
 
 
 

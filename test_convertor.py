@@ -19,3 +19,9 @@ def test_exception2():
   expections2 = "Please enter a integer"
   for a in arabic:
     assert convertor.convert(a) == expections2
+
+def test_exception3():
+  arabic = [4000,67238]
+  expections3 = "Out of range"
+  for a in arabic:
+    assert convertor.convert(a) == expections3
